@@ -1,8 +1,35 @@
 .form-container {
     display: flex;
     justify-content: center;
+    min-height: 70vh; /* cambiar después */
 }
 
 .login-form{
-    border-radius: 1px;
+    padding: 1rem;
+    margin-top: 5rem;
+    height: fit-content;
+    border-radius: 9px;
+    border: 1px solid #d3dce6;
+    background-color: #FCFFFD;
+    box-shadow: 5px 5px 10px #aaaaaa;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.login-title {
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+}
+
+.login-input {
+    margin: 1rem 0;
+}
+.login-check {
+    margin-top: 1rem;
+}
+
+.login-btn {
+    margin: 0 0.5rem;
 }
