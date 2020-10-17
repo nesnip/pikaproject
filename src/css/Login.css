@@ -1,17 +1,23 @@
+.login-view {
+    min-height: 100vh;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
 .form-container {
     display: flex;
     justify-content: center;
-    min-height: 70vh; /* cambiar después */
+    margin: 40px 20px;
 }
 
 .login-form{
-    padding: 1rem;
-    margin-top: 5rem;
+    padding: 50px 30px;
+    margin: auto;
+    width: 450px;
     height: fit-content;
     border-radius: 9px;
     border: 1px solid #d3dce6;
     background-color: #FCFFFD;
-    box-shadow: 5px 5px 10px #aaaaaa;
+    /* box-shadow: 5px 5px 10px #aaaaaa; */
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,16 +26,20 @@
 
 .login-title {
     font-family: 'Sansita Swashed', cursive;
+    font-size: 40px;
     text-align: center;
+    margin: 0 0 15px;
 }
 
 .login-input {
-    margin: 1rem 0;
+    margin: 25px 0;
 }
 .login-check {
-    margin-top: 1rem;
+    margin-top: 10px;
 }
-
+.button-container {
+    text-align: center;
+}
 .login-btn {
-    margin: 0 0.5rem;
+    margin: 10px 10px;
 }

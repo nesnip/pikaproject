@@ -16,7 +16,7 @@ const Login = () => {
     };
   
     return (
-        <>
+        <div className="login-view">
         <Header />
         <section className="form-container">
             <form className="login-form">
@@ -34,21 +34,21 @@ const Login = () => {
                         placeholder="Ingresar contraseña"
                         value={password}
                         onChange={handlePassword}
-                        className="form-control"
+                        className="form-control login-input"
                     />
                 </div>
                 <div class="form-group form-check login-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
                     <label class="form-check-label" for="exampleCheck1">Recordar documento</label>
                 </div>
-                <div className="">
+                <div className="button-container">
                     <button type="submit" class="btn btn-primary login-btn">Cancelar</button>
                     <button type="submit" class="btn btn-primary login-btn">Ingresar</button>
                 </div>
             </form>
         </section>
         <Footer />
-      </>
+      </div>
     )
   };
   
