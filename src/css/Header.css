@@ -1,0 +1,14 @@
+.header {
+    background: #111648;
+    height: 3.5rem;
+}
+
+.font-color {
+    color: #FFFFFF;
+    padding: 0.7rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
