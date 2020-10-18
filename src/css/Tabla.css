@@ -1,0 +1,13 @@
+.demo{
+    margin: 2rem 1rem;
+}
+
+thead{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+table th{
+    width: 120px;
+}
+

@@ -1,10 +1,5 @@
-.form-container {
-    display: flex;
-    justify-content: center;
-    min-height: 70vh; /* cambiar después */
-}
-
 .home-title {
     font-family: 'Sansita Swashed', cursive;
     text-align: center;
+    margin: 1rem;
 }
