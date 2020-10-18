@@ -1,5 +1,20 @@
+.home-container {
+    min-height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    min-height: 70vh; /* cambiar después */
+}
+
 .home-title {
     font-family: 'Sansita Swashed', cursive;
     text-align: center;
-    margin: 1rem;
+}
+
+.dropzone-container {
+    background-color: #F5F5F5;
+    max-width: 700px;
+    margin: auto;
 }
