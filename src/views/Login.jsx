@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../css/Login.css';
@@ -6,6 +7,7 @@ import '../css/Login.css';
 const Login = () => {
     const [dni, setDni] = useState('');
     const [password, setPassword] = useState('');
+    const history = useHistory();
   
     const handleDni = (e) => {
         setDni(e.target.value);
@@ -14,12 +16,17 @@ const Login = () => {
     const handlePassword = (e) => {
         setPassword(e.target.value);
     };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        history.push('/home');
+    };
   
     return (
         <div className="login-view">
         <Header />
         <section className="form-container">
-            <form className="login-form">
+            <form className="login-form" onSubmit={handleSubmit}>
                 <h3 className="login-title">Ñawiriy</h3>
                 <div>
                     <input
@@ -43,7 +50,7 @@ const Login = () => {
                 </div>
                 <div className="button-container">
                     <button type="submit" class="btn btn-primary login-btn">Cancelar</button>
-                    <button type="submit" class="btn btn-primary login-btn">Ingresar</button>
+                    <button type="submit" class="btn btn-primary login-btn" onClick={handleSubmit}>Ingresar</button>
                 </div>
             </form>
         </section>
